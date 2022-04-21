@@ -25,7 +25,7 @@ async function chatbot(lineId, inputText) {
     message: inputText,
   });
 
-  //console.log(response.data);
+  console.log(response.data);
 
   response.data.forEach((el) => {
     "text" in el && addTextMessageToReply(messages, el.text);
